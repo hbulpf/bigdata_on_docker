@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://hadoop-master:9000/</value>
+    </property>
+	<property>
+	      <name>io.file.buffer.size</name>
+	      <value>131072</value>
+	<description> 设置缓存大小 </description>
+	</property>
+	<property>
+	       <name>hadoop.tmp.dir</name>
+	       <value>file:/tmp/hd2.7</value>
+	       <description> 存放临时文件的目录 </description>
+	</property> 
+	<property>
+	  <name>hadoop.security.authorization</name>
+	  <value>false</value>
+	</property>      
+</configuration>
