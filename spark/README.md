@@ -23,9 +23,9 @@ sh start-container.sh
 
 **output:**
 ```
-start master container...
-start slave-0 container...
-start slave-1 container...
+start spark master container...
+start spark slave-0 container...
+start spark slave-1 container...
 root@master:~# 
 ```
 
@@ -43,11 +43,19 @@ sh start-hadoop.sh
 sh start-spark.sh
 ```
 
+test if spark's ok
+```
+spark-shell
+```
 ### Arbitrary size Spark cluster
 ```
 sh start-container.sh <number of slaves>
 ```
 
+### get into master again
+```
+docker exec -it master bash
+```
 
 ## 参考
 1. Blog: [Run Spark Cluster in Docker Update](http://kiwenlau.com/2016/06/26/spark-cluster-docker-update-english/)
