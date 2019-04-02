@@ -25,7 +25,7 @@ do
 	                --net=hadoop \
 	                --name slave-$i \
 	                --hostname slave-$i \
-	                hs_hadoop:v1.0 &> /dev/null
+	                hs_spark-hadoop:v1.0 &> /dev/null
 	i=$(( $i + 1 ))
 done 
 
