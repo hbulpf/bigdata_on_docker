@@ -30,52 +30,52 @@ docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_zk-hadoop:v1.0
 
 1. hs_hbase-zk-hadoop
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_hbase-zk-hadoop:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_hbase-zk-hadoop:v1.0
 ```
 
 1. hs_storm-zk
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_storm-zk:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_storm-zk:v1.0
 ```
 
 1. hs_flume-hadoop
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_flume-hadoop:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_flume-hadoop:v1.0
 ```
 
 1. hs_kafka-zk
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_kafka-zk:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_kafka-zk:v1.0
 ```
 
 1. hs_pig-hadoop
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_pig-hadoop:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_pig-hadoop:v1.0
 ```
 
 1. hs_redis
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_redis:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_redis:v1.0
 ```
 
 1. hs_redis-spark
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_redis-spark:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_redis-spark:v1.0
 ```
 
 1. hs_mahout-hadoop
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_mahout-hadoop:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_mahout-hadoop:v1.0
 ```
 
 1. hs_mongodb
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_mongodb:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_mongodb:v1.0
 ```
 
 1. hs_leveldb
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_leveldb:v1.0 *
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_leveldb:v1.0
 ```
 
 1. hs_hibench
