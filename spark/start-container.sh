@@ -10,6 +10,8 @@ docker run -itd \
                 --net=hadoop \
                 -p 10070:50070 \
                 -p 18088:8088 \
+                -p 18086:4040 \
+				-p 18087:8080 \
                 --name master \
                 --hostname master \
                 hs_spark-hadoop:v1.0 &> /dev/null
@@ -23,6 +25,7 @@ do
 	echo "start spark slave-$i container..."
 	docker run -itd \
 	                --net=hadoop \
+					-p "1800${i}":50075 \
 	                --name slave-$i \
 	                --hostname slave-$i \
 	                hs_spark-hadoop:v1.0 &> /dev/null

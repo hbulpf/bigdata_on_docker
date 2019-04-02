@@ -69,5 +69,18 @@ sh start-container.sh <number of slaves>
 docker exec -it master bash
 ```
 
+
+**注: 默认使用以下端口映射表**
+
+宿主机端口 | 容器端口 | 说明
+------| --- | ----
+10070 | 50070 | Hadoop NameNode Web 页面
+18088 | 8088 | Hadoop ResourceManager Web 页面
+18086 | 4040 | Spark Jobs Web 页面
+18087 | 8080 | Spark master Web 页面
+1800X | 50075 | Hadoop DataNode Web 页面
+
+>X表示slave的标号，从0开始
+
 ## 参考
 1. [基于Docker搭建Spark集群之升级版](http://kiwenlau.com/2016/06/12/160612-spark-cluster-docker-update/)
