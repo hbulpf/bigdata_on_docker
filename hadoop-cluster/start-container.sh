@@ -33,14 +33,15 @@ done
 if [ $N -ne 3 ]
 then 
 	j=0
-	docker cp ./hadoop_config/slaves master:/usr/local/hadoop/etc/hadoop/
+	docker cp ./hadoop_config/slaves master:/usr/local/hadoop/etc/hadoop/slaves
 	while [ $j -lt $N ]
 	do	
-	docker cp ./hadoop_config/slaves slave-$i:/usr/local/hadoop/etc/hadoop/
+	# copy file to slave-$i
+	docker cp ./hadoop_config/slaves slave-$i:/usr/local/hadoop/etc/hadoop/slaves
 		j=$(( $j + 1 ))
 	done 
 fi
 
-docker cp ./hadoop_config/run-wordcount.sh master:/root/
+docker cp ./hadoop_config/run-wordcount.sh master:/root/run-wordcount.sh
 # get into hadoop master container
 docker exec -it master bash
