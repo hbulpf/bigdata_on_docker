@@ -27,8 +27,9 @@ start spark slave-1 container...
 root@master:~# 
 ```
 
->以上操作将会启动一个3节点的 Spark 集群， 1 master and 2 slaves，并进入 `/root/` 目录
->3个节点是: master,slave-0,slave-1
+
+> 以上操作将会启动一个3节点的 Spark 集群(1 主 2 从) ，并进入 `/root/` 目录  
+> 3个节点是: master,slave-0,slave-1
 
 ##### 4. 启动 hadoop
 ```

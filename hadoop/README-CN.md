@@ -21,7 +21,7 @@ docker network create --driver=bridge hadoop
 sh start-container.sh
 ```
 
-**output:**
+**输出:**
 ```
 start hadoop master container...
 start hadoop slave-0 container...
@@ -29,8 +29,8 @@ start hadoop slave-1 container...
 root@master:~# 
 ```
 
->以上操作将会启动一个3节点的 Hadoop 集群， 1 master and 2 slaves，并进入 `/root/` 目录
->3个节点是: master,slave-0,slave-1
+> 以上操作将会启动一个3节点的 Hadoop 集群(1 主 2 从) ，并进入 `/root/` 目录  
+> 3个节点是: master,slave-0,slave-1
 
 ##### 4. 启动 hadoop
 
@@ -44,7 +44,7 @@ sh start-hadoop.sh
 sh run-wordcount.sh
 ```
 
-**output**
+**输出**
 
 ```
 input file1.txt:
