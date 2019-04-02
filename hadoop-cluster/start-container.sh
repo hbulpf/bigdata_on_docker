@@ -29,16 +29,23 @@ do
 	i=$(( $i + 1 ))
 done 
 
+echo -e "hadoop cluster: 1 master, $N slaves\n"
 
 if [ $N -ne 2 ]
 then 
 	j=0
-	docker cp ./hadoop_config/slaves master:/usr/local/hadoop/etc/hadoop/slaves
+	rm hadoop_config/slaves
+	while [ $j -lt $N ]
+	do
+		echo "slave-$j" >> hadoop_config/slaves
+		((j++))
+	done 
+	docker cp hadoop_config/slaves master:/usr/local/hadoop/etc/hadoop/slaves
 	while [ $j -lt $N ]
 	do	
-	# copy file to slave-$i
-	docker cp ./hadoop_config/slaves slave-$i:/usr/local/hadoop/etc/hadoop/slaves
-		j=$(( $j + 1 ))
+	# copy file to slave-$j
+	docker cp hadoop_config/slaves slave-$j:/usr/local/hadoop/etc/hadoop/slaves
+	j=$(( $j + 1 ))
 	done 
 fi
 

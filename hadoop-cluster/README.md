@@ -61,29 +61,12 @@ Hello    2
 
 ### Arbitrary size Hadoop cluster
 
-##### 1. pull docker images and clone github repository
-
-do 1~3 like section **3 Nodes Hadoop Cluster**
-
-##### 2. rebuild docker image
-
-```
-sh resize-cluster.sh 5
-```
-- specify parameter > 1: 2, 3..
-- this script just rebuild hadoop image with different **slaves** file, which pecifies the name of all slave nodes
-
-
 ##### 3. start container
 
 ```
-sudo ./start-container.sh 5
+sh start-container.sh <number of slaves>
 ```
-- use the same parameter as the step 2
 
-##### 4. run hadoop cluster 
-
-do 4~5 like section A
 
 ## 参考
 1. Blog: [Run Hadoop Cluster in Docker Update](http://kiwenlau.com/2016/06/26/hadoop-cluster-docker-update-english/)
