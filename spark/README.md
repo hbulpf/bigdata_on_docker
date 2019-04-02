@@ -3,7 +3,6 @@
 ### 3 Nodes Spark Cluster
 
 ##### 1. pull docker image 
-
 ```
 docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_spark:v1.0
 docker tag registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_spark:v1.0 hs_spark:v1.0
