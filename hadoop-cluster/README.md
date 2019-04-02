@@ -30,6 +30,7 @@ root@master:~#
 ```
 
 >after that , you start 3 containers with 1 master and 2 slaves,you will get into the /root directory of master container
+>3 nodes are: master,slave-0,slave-1
 
 ##### 4. start hadoop
 
