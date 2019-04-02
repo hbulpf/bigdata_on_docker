@@ -5,7 +5,7 @@ N=${1:-2}
 
 # start spark master container
 docker rm -f master &> /dev/null
-echo "start master container..."
+echo "start spark master container..."
 docker run -itd \
                 --net=hadoop \
                 -p 10070:50070 \
@@ -20,7 +20,7 @@ i=0
 while [ $i -lt $N ]
 do
 	docker rm -f slave-$i &> /dev/null
-	echo "start slave-$i container..."
+	echo "start spark slave-$i container..."
 	docker run -itd \
 	                --net=hadoop \
 	                --name slave-$i \
@@ -29,7 +29,7 @@ do
 	i=$(( $i + 1 ))
 done 
 
-echo -e "hadoop cluster: 1 master, $N slaves\n"
+echo -e "spark cluster: 1 master, $N slaves\n"
 
 if [ $N -ne 2 ]
 then 
@@ -46,7 +46,7 @@ then
 	do	
 	# copy file to slave-$j
 	docker cp spark_config/slaves slave-$j:/usr/local/hadoop/etc/hadoop/slaves
-	docker cp spark_config/slaves slave-$j:/usr/local/spark/conf//slaves
+	docker cp spark_config/slaves slave-$j:/usr/local/spark/conf/slaves
 	j=$(( $j + 1 ))
 	done 
 fi

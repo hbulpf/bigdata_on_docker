@@ -5,7 +5,7 @@ N=${1:-2}
 
 # start hadoop master container
 docker rm -f master &> /dev/null
-echo "start master container..."
+echo "start hadoop master container..."
 docker run -itd \
                 --net=hadoop \
                 -p 10070:50070 \
@@ -20,7 +20,7 @@ i=0
 while [ $i -lt $N ]
 do
 	docker rm -f slave-$i &> /dev/null
-	echo "start slave-$i container..."
+	echo "start hadoop slave-$i container..."
 	docker run -itd \
 	                --net=hadoop \
 	                --name slave-$i \
