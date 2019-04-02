@@ -60,9 +60,6 @@ Hello    2
 ```
 
 ### Arbitrary size Hadoop cluster
-
-##### 3. start container
-
 ```
 sh start-container.sh <number of slaves>
 ```
