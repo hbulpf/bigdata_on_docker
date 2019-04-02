@@ -8,8 +8,8 @@ docker rm -f master &> /dev/null
 echo "start master container..."
 docker run -itd \
                 --net=hadoop \
-                -p 50070:50070 \
-                -p 8088:8088 \
+                -p 10070:50070 \
+                -p 18088:8088 \
                 --name master \
                 --hostname master \
                 hs_hadoop:v1.0 &> /dev/null
