@@ -30,7 +30,7 @@ do
 done 
 
 
-if [ $N -ne 3]
+if [ $N -ne 3 ]
 then 
 	j=0
 	docker cp ./hadoop_config/slaves master:/usr/local/hadoop/etc/hadoop/
