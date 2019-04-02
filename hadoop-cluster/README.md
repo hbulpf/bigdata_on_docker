@@ -36,8 +36,7 @@ root@master:~#
 
 ```
 hdfs namenode -format
-$HADOOP_HOME/sbin/start-dfs.sh
-$HADOOP_HOME/sbin/start-yarn.sh
+sh start-hadoop.sh
 ```
 
 ##### 5. run wordcount
