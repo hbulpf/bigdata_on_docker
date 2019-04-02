@@ -12,7 +12,7 @@ docker run -itd \
                 -p 18088:8088 \
                 --name master \
                 --hostname master \
-                hs_hadoop:v1.0 &> /dev/null
+                hs_spark:v1.0 &> /dev/null
 
 
 # start spark slave container

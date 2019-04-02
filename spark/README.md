@@ -33,7 +33,6 @@ root@master:~#
 >3 nodes are: master,slave-0,slave-1
 
 ##### 4. start hadoop
-
 ```
 hdfs namenode -format
 sh start-hadoop.sh
