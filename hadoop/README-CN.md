@@ -1,4 +1,4 @@
-## 在容器中运行 Hadoop 集群
+## 在容器中运行 Hadoop 集群  / [English](README.md)
 
 ### 3 节点的 Hadoop 集群
 
