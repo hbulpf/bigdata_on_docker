@@ -66,4 +66,5 @@ Host port | Container port | Description
 18087 | 8080 | Spark master Web Page
 1800X | 50075 | Hadoop DataNode Web Page
 
->X indicates the label of the slave, starting from 0
+>X indicates the label of the slave, starting from 0    
+>visit Hadoop NameNode Web: http://localhost:10070

@@ -76,11 +76,10 @@ docker exec -it master bash
 ------| --- | ----
 10070 | 50070 | Hadoop NameNode Web 页面
 18088 | 8088 | Hadoop ResourceManager Web 页面
-18086 | 4040 | Spark Jobs Web 页面
-18087 | 8080 | Spark master Web 页面
 1800X | 50075 | Hadoop DataNode Web 页面
 
->X表示slave的标号，从0开始
+>X表示slave的标号，从0开始   
+>访问 Hadoop NameNode Web 页面 : http://localhost:10070
 
 ## 参考
 1. [基于Docker搭建Spark集群之升级版](http://kiwenlau.com/2016/06/12/160612-spark-cluster-docker-update/)

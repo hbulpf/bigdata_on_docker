@@ -66,4 +66,5 @@ docker exec -it master bash
 18087 | 8080 | Spark master Web 页面
 1800X | 50075 | Hadoop DataNode Web 页面
 
->X表示slave的标号，从0开始
+>X表示slave的标号，从0开始     
+>访问 Hadoop NameNode Web 页面 : http://localhost:10070
