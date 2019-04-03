@@ -5,8 +5,8 @@
 ##### 1. 拉取 docker 镜像
 
 ```
-docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_spark:v1.0
-docker tag registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_spark:v1.0 hs_spark:v1.0
+docker pull registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_spark-hadoop:v1.0
+docker tag registry.cn-shenzhen.aliyuncs.com/hsdocker2019/hs_spark-hadoop:v1.0 hs_spark-hadoop:v1.0
 ```
 
 ##### 2. 创建 hadoop 网络
