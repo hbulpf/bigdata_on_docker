@@ -24,9 +24,9 @@ do
 	docker rm -f slave-$i &> /dev/null
 	echo "start spark slave-$i container..."
 	docker run -itd \
-	                --net=hadoop \
-					-p "1800${i}":50075 \
-	                --name slave-$i \
+					--net=hadoop \
+					-p 127.0.0.1:"1800${i}":50075 \
+					--name slave-$i \
 	                --hostname slave-$i \
 	                hs_spark-hadoop:v1.0 &> /dev/null
 	i=$(( $i + 1 ))
