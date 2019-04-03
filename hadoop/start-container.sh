@@ -6,7 +6,14 @@ N=${1:-2}
 # start hadoop master container
 docker rm -f master &> /dev/null
 echo "start hadoop master container..."
-docker run -itd --net=hadoop -p 10070:50070 -p 18088:8088 --name master --hostname master hs_spark-hadoop:v1.0 &> /dev/null
+docker run -itd \
+				--net=hadoop \
+				-p 10070:50070 \
+				-p 18088:8088 \
+				--name=master \
+				--hostname=master \
+				--restart=always \
+				hs_spark-hadoop:v1.0 &> /dev/null
 
 # start hadoop slave container
 i=0
@@ -19,7 +26,8 @@ do
 					-p 127.0.0.1:"1800${i}":50075 \
 					--name slave-$i \
 					--hostname slave-$i \
-					hs_spark-hadoop:v1.0
+					--restart=always \
+					hs_spark-hadoop:v1.0 &> /dev/null
 	i=$(( $i + 1 ))
 done 
 
