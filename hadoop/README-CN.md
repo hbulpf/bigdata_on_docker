@@ -1,4 +1,6 @@
 ## 在容器中运行 Hadoop 集群  / [English](README.md)
+>**开始前，请确保已经将本仓库clone到本地**
+
 
 ### 3 节点的 Hadoop 集群
 

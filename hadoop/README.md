@@ -1,4 +1,5 @@
 ## Run Hadoop Cluster within Docker Containers / [中文](README-CN.md)
+>Before you start, make sure you have cloned this repository locally.
 
 ### 3 Nodes Hadoop Cluster
 
