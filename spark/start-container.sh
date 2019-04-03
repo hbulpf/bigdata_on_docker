@@ -27,7 +27,7 @@ do
 					-p 127.0.0.1:"1800${i}":50075 \
 					--name slave-$i \
 	                --hostname slave-$i \
-					--restart=always
+					--restart=always \
 	                hs_spark-hadoop:v1.0 &> /dev/null
 	i=$(( $i + 1 ))
 done 
