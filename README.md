@@ -4,7 +4,7 @@ Run Hadoop and Machine Learning platforms in Docker containers
 
 ## Get Docker Images
 1. [Using Images from docker.io](images_aliyun.md)
-1. [Using Images from aliyun](images_aliyun.md) (大陆地区更快)
+1. [Using Images from aliyun](images_aliyun.md) (Faster in China)
 
 
 ## Run Hadoop in Docker containers
