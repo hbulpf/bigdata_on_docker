@@ -21,13 +21,13 @@ while [ $i -lt $N ]
 do
 	docker rm -f slave-$i &> /dev/null
 	echo "start hadoop slave-$i container..."
-	port="1800${i}"
+	port=`expr 18000 + ${i}`
 	docker run -itd \
 	                --net=hadoop \
-					-p $port:50075 \			
-	                --name slave-$i \
+			-p 127.0.0.1:"1800${i}":50075 \
+			--name slave-$i \
 	                --hostname slave-$i \
-	                hs_hadoop:v1.0 &> /dev/null
+	                hs_hadoop:v1.0
 	i=$(( $i + 1 ))
 done 
 
