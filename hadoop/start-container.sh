@@ -21,9 +21,10 @@ while [ $i -lt $N ]
 do
 	docker rm -f slave-$i &> /dev/null
 	echo "start hadoop slave-$i container..."
+	port="1800${i}"
 	docker run -itd \
 	                --net=hadoop \
-					-p "1800${i}":50075 \			
+					-p $port:50075 \			
 	                --name slave-$i \
 	                --hostname slave-$i \
 	                hs_hadoop:v1.0 &> /dev/null
