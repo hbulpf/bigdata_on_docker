@@ -6,14 +6,7 @@ N=${1:-2}
 # start hadoop master container
 docker rm -f master &> /dev/null
 echo "start hadoop master container..."
-docker run -itd \
-                --net=hadoop \
-                -p 10070:50070 \
-                -p 18088:8088 \
-                --name master \
-                --hostname master \
-                hs_hadoop:v1.0 &> /dev/null
-
+docker run -itd --net=hadoop -p 10070:50070 -p 18088:8088 --name master --hostname master hs_hadoop:v1.0 &> /dev/null
 
 # start hadoop slave container
 i=0

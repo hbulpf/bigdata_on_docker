@@ -6,16 +6,7 @@ N=${1:-2}
 # start spark master container
 docker rm -f master &> /dev/null
 echo "start spark master container..."
-docker run -itd \
-                --net=hadoop \
-                -p 10070:50070 \
-                -p 18088:8088 \
-                -p 18086:4040 \
-				-p 18087:8080 \
-                --name master \
-                --hostname master \
-                hs_spark-hadoop:v1.0 &> /dev/null
-
+docker run -itd --net=hadoop -p 10070:50070 -p 18088:8088 -p 18086:4040 -p 18087:8080 --name master --hostname master hs_spark-hadoop:v1.0 &> /dev/null
 
 # start spark slave container
 i=0
