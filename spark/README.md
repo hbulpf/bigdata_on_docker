@@ -55,3 +55,15 @@ sh start-container.sh <number of slaves>
 ```
 docker exec -it master bash
 ```
+
+**Note: The following port mapping table is used by default**
+
+Host port | Container port | Description
+------| --- | ----
+10070 | 50070 | Hadoop NameNode Web Page
+18088 | 8088 | Hadoop ResourceManager Web Page
+18086 | 4040 | Spark Jobs Web Page
+18087 | 8080 | Spark master Web Page
+1800X | 50075 | Hadoop DataNode Web Page
+
+>X indicates the label of the slave, starting from 0
